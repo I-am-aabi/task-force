@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "118407322548",
+    "project_id": "taskforce-662244",
+    "storage_bucket": "taskforce-662244.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:118407322548:android:39c1ca03317a4a128f70e1",
+        "android_client_info": {
+          "package_name": "com.example.test_1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "118407322548-6a8e5tj6su2827cgujgl72mvgik3nddg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkYtAsrBiK_QXYWzG9zG-43WinE2Gx-Eg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "118407322548-6a8e5tj6su2827cgujgl72mvgik3nddg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
