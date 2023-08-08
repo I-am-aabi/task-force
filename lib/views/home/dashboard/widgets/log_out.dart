@@ -5,7 +5,7 @@ import 'package:test_1/views/authentication/loading_screen.dart';
 
 import 'package:test_1/views/home/styles_constants.dart/colors.dart';
 
-void deleteCustomer(BuildContext context) {
+void logoutPopup(BuildContext context) {
   final _auth = FirebaseAuth.instance;
 
   showDialog(

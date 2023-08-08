@@ -9,6 +9,7 @@ import 'package:test_1/controllers/home/product_data_controller.dart';
 import 'package:test_1/controllers/home/pdf_controller.dart';
 import 'package:test_1/controllers/home/transaction_controller.dart';
 import 'package:test_1/views/home/dashboard/widgets/dashboard_card.dart';
+import 'package:test_1/views/home/dashboard/widgets/log_out.dart';
 import 'package:test_1/views/home/styles_constants.dart/styles.dart';
 
 class DashboardPage extends StatelessWidget {
@@ -36,9 +37,11 @@ class DashboardPage extends StatelessWidget {
                 'Dashboard',
                 style: TextStylesCollection.headingstyle(),
               ),
-              IconButton(onPressed: () {
-                
-              }, icon: const Icon(Icons.logout)),
+              IconButton(
+                  onPressed: () {
+                    logoutPopup(context);
+                  },
+                  icon: const Icon(Icons.logout)),
             ],
           ),
           const SizedBox(
@@ -115,10 +118,10 @@ class DashboardPage extends StatelessWidget {
                           text3: customerController.customerscount.value
                               .toString()),
                     )),
-                 Expanded(
+                Expanded(
                     flex: 1,
                     child: Obx(
-                      ()=>  DashCard(
+                      () => DashCard(
                         colorIndex: 3,
                         icon: Icons.shopping_cart,
                         text1: 'Total',
