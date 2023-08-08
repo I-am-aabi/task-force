@@ -1,11 +1,12 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:test_1/views/navigationbar.dart';
+import 'package:test_1/views/authentication/loading_screen.dart';
+import 'package:test_1/views/authentication/login/login_page.dart';
 
-void main()async {
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-   await Firebase.initializeApp();
+  await Firebase.initializeApp();
   runApp(const MyApp());
 }
 
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
         brightness: Brightness.light,
       ),
       darkTheme: ThemeData(brightness: Brightness.dark),
-      home: Navbar(),
+      home: LoadingScreen(),
     );
   }
 }

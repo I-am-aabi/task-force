@@ -6,7 +6,7 @@ class CustomerTransaction {
   int count;
   int total;
   String parentid;
-  String productid;
+  String uid;
   String product;
 
  
@@ -17,7 +17,7 @@ class CustomerTransaction {
       required this.id,
       required this.count,
       required this.parentid,
-      required this.productid,
+      required this.uid,
       required this.product,
       required this.total});
 
@@ -29,7 +29,7 @@ class CustomerTransaction {
         id: json["id"],
         count: json["count"],
         parentid: json["parentid"],
-        productid: json["productid"],
+        uid: json["uid"],
         product: json["product"],
         total: json["total"],
       );
@@ -42,7 +42,7 @@ class CustomerTransaction {
     data['total'] = total;
     data['id'] = id;
     data['product'] = product;
-    data['productid'] = productid;
+    data['uid'] = uid;
     data['parentid'] = parentid;
     data['count'] = count;
     return data;
