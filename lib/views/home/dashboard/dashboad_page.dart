@@ -36,7 +36,9 @@ class DashboardPage extends StatelessWidget {
                 'Dashboard',
                 style: TextStylesCollection.headingstyle(),
               ),
-              IconButton(onPressed: () {}, icon: const Icon(Icons.settings)),
+              IconButton(onPressed: () {
+                
+              }, icon: const Icon(Icons.logout)),
             ],
           ),
           const SizedBox(
